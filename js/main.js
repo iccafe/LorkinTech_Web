@@ -6,10 +6,14 @@
   var navLinks = document.getElementById("nav-links");
   if (toggle && navLinks) {
     toggle.addEventListener("click", function () {
-      navLinks.classList.toggle("open");
+      var open = navLinks.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
     });
     navLinks.addEventListener("click", function (e) {
-      if (e.target.tagName === "A") navLinks.classList.remove("open");
+      if (e.target.tagName === "A") {
+        navLinks.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+      }
     });
   }
 
@@ -18,28 +22,19 @@
   if (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      var name = document.getElementById("f-name");
-      var email = document.getElementById("f-email");
-      var subject = document.getElementById("f-subject");
-      var msg = document.getElementById("f-msg");
 
-      var body = "From: " + (name ? name.value : "") + "\n" +
-                 "Email: " + (email ? email.value : "") + "\n\n" +
-                 (msg ? msg.value : "");
+      var body = "From: " + (document.getElementById("f-name") ? document.getElementById("f-name").value : "") + "\n" +
+                  "Email: " + (document.getElementById("f-email") ? document.getElementById("f-email").value : "") + "\n\n" +
+                  (document.getElementById("f-msg") ? document.getElementById("f-msg").value : "");
 
-      var mailSubject = encodeURIComponent(subject ? subject.value : "");
+      var mailSubject = encodeURIComponent(document.getElementById("f-subject") ? document.getElementById("f-subject").value : "");
       var mailBody = encodeURIComponent(body);
-
-      var lang = document.documentElement.lang || "zh-CN";
-      var fallback = lang.startsWith("en") ?
-        "" : "mailto:sales@lorkintech.com";
 
       var href = "mailto:sales@lorkintech.com" +
         "?subject=" + mailSubject +
         "&body=" + mailBody;
 
       window.location.href = href;
-      if (fallback) window.location.href = fallback;
     });
   }
 

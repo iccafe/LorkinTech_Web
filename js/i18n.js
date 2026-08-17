@@ -231,7 +231,9 @@
     "con.form.msg.ph": { zh: "请描述您的需求，我们将尽快与您联系。", en: "Briefly describe your needs and we will get back to you soon." },
     "con.form.submit": { zh: "发送留言", en: "Submit" },
     "con.form.note": { zh: "点击提交将打开您的邮件客户端发送邮件至 sales@lorkintech.com", en: "Submitting opens your email client to send to sales@lorkintech.com" },
-    "con.map.note": { zh: "地图占位（可接入高德/谷歌地图）", en: "Map placeholder (Google / AMap embed)" },
+    "con.map.note": { zh: "点击下方按钮即可在高德地图中查看公司位置", en: "Click the button below to view our office location on AMap" },
+    "con.map.view": { zh: "在高德地图中查看位置", en: "View Location on AMap" },
+    "con.map.name": { zh: "申能金融大厦", en: "Shenneng Financial Tower" },
 
 "back.solutions": { zh: "← 返回方案介绍", en: "← Back to Solutions" },
 "sem.banner.title": { zh: "半导体行业解决方案", en: "Semiconductor Solutions" },
