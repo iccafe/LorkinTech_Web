@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>联系我们 | Contact Us - Shanghai LorkinTech</title>
+  <meta name="description" content="联系上海逻境科技：上海市浦东新区国展路1529号申能金融大厦五楼520室，sales@lorkintech.com">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand">
+        <img class="logo-img" src="logo/LorkinTech_logo_web.png" alt="LorkinTech Logo">
+        <span class="brand-text">
+          <span class="bn" data-i18n="brand.zh">上海逻境科技有限公司</span>
+          <span class="be" data-i18n="brand.sub">COMSOL 官方授权合作伙伴</span>
+        </span>
+      </a>
+
+      <nav>
+        <button id="nav-toggle" class="nav-toggle" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+          <li><a href="products.html" data-i18n="nav.products">产品介绍</a></li>
+          <li><a href="solutions.html" data-i18n="nav.solutions">方案介绍</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">联系我们</a></li>
+          <li class="lang-toggle">
+            <button id="lang-zh" class="active">中</button>
+            <button id="lang-en">EN</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <h1 data-i18n="con.banner.title">联系我们</h1>
+        <p data-i18n="con.banner.desc">我们期待与您的交流与合作</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+
+        <!-- Info -->
+        <div class="contact-info">
+          <div class="info-item">
+            <div class="icon">📍</div>
+            <div>
+              <h3 data-i18n="con.addr.title">公司地址</h3>
+              <p data-i18n="con.addr">上海市浦东新区国展路1529号 申能金融大厦 五楼 520室</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon">✉️</div>
+            <div>
+              <h3 data-i18n="con.email.title">联系邮箱</h3>
+              <p><a href="mailto:sales@lorkintech.com">sales@lorkintech.com</a></p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon">🕘</div>
+            <div>
+              <h3 data-i18n="con.hours.title">工作时间</h3>
+              <p data-i18n="con.hours">周一至周五 9:00 - 18:00</p>
+            </div>
+          </div>
+
+          <div style="margin-top:28px;border:1.5px dashed var(--border);border-radius:12px;padding:24px;text-align:center;color:var(--muted);font-size:14px;" data-i18n="con.map.note">
+            地图占位（可接入高德/谷歌地图）
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="form-card">
+          <h3 data-i18n="con.form.title">在线留言</h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="f-name" data-i18n="con.form.name">姓名</label>
+              <input type="text" id="f-name" name="name" required data-i18n-ph="con.form.name.ph" placeholder="请输入您的姓名">
+            </div>
+            <div class="form-group">
+              <label for="f-email" data-i18n="con.form.email">邮箱</label>
+              <input type="email" id="f-email" name="email" required data-i18n-ph="con.form.email.ph" placeholder="请输入您的邮箱">
+            </div>
+            <div class="form-group">
+              <label for="f-subject" data-i18n="con.form.subject">主题</label>
+              <input type="text" id="f-subject" name="subject" data-i18n-ph="con.form.subject.ph" placeholder="产品咨询 / 方案咨询 / 合作洽谈">
+            </div>
+            <div class="form-group">
+              <label for="f-msg" data-i18n="con.form.msg">留言内容</label>
+              <textarea id="f-msg" name="message" rows="5" required data-i18n-ph="con.form.msg.ph" placeholder="请描述您的需求，我们将尽快与您联系。"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" data-i18n="con.form.submit">发送留言</button>
+          </form>
+          <p class="form-note">
+            <span data-i18n="con.form.note">点击提交将打开您的邮件客户端发送邮件至 sales@lorkintech.com</span>
+          </p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div>
+        <a href="index.html" class="brand" style="margin-bottom:16px;">
+          <img class="logo-img" src="logo/LorkinTech_logo_web.png" alt="LorkinTech Logo">
+          <span class="brand-text">
+            <span class="bn" data-i18n="brand.zh">上海逻境科技有限公司</span>
+            <span class="be" data-i18n="brand.sub">COMSOL 官方授权合作伙伴</span>
+          </span>
+        </a>
+        <p data-i18n="footer.about">上海逻境科技有限公司专注于仿真技术的推广与应用。</p>
+      </div>
+      <div>
+        <h4 data-i18n="footer.quick">快速导航</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+          <li><a href="products.html" data-i18n="nav.products">产品介绍</a></li>
+          <li><a href="solutions.html" data-i18n="nav.solutions">方案介绍</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">联系我们</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4 data-i18n="footer.contact">联系方式</h4>
+        <p data-i18n="con.addr">上海市浦东新区国展路1529号 申能金融大厦 五楼 520室</p>
+        <p><a href="mailto:sales@lorkintech.com">sales@lorkintech.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © <span id="year"></span> Shanghai LorkinTech Co., Ltd. <span data-i18n="footer.rights">版权所有</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
