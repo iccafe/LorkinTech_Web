@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>产品介绍 | Products - Shanghai LorkinTech</title>
-  <meta name="description" content="COMSOL Multiphysics 仿真平台与专业附加模块介绍 - Shanghai LorkinTech Co., Ltd.">
+  <meta name="description" content="COMSOL 产品库：多物理场仿真平台、仿真 App 部署产品与专业附加模块分类介绍 - Shanghai LorkinTech Co., Ltd.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,7 +26,17 @@
         <ul id="nav-links" class="nav-links">
           <li><a href="index.html" data-i18n="nav.home">首页</a></li>
           <li><a href="products.html" data-i18n="nav.products">产品介绍</a></li>
-          <li><a href="solutions.html" data-i18n="nav.solutions">方案介绍</a></li>
+          <li class="has-sub">
+            <a href="solutions.html" data-i18n="nav.solutions">方案介绍</a>
+            <ul class="sub-nav">
+              <li><a href="solutions/solution-energy.html" data-i18n="ind.energy">能源与电池</a></li>
+              <li><a href="solutions/solution-auto.html" data-i18n="ind.auto">汽车制造</a></li>
+              <li><a href="solutions/solution-elec.html" data-i18n="ind.elec">电子与半导体</a></li>
+              <li><a href="solutions/solution-aero.html" data-i18n="ind.aero">航空航天</a></li>
+              <li><a href="solutions/solution-bio.html" data-i18n="ind.bio">生物医疗</a></li>
+              <li><a href="solutions/solution-process.html" data-i18n="ind.process">化工与过程工业</a></li>
+            </ul>
+          </li>
           <li><a href="contact.html" data-i18n="nav.contact">联系我们</a></li>
           <li class="lang-toggle">
             <button id="lang-zh" class="active">中</button>
@@ -41,74 +51,178 @@
     <section class="page-banner">
       <div class="container">
         <h1 data-i18n="prod.banner.title">产品介绍</h1>
-        <p data-i18n="prod.banner.desc">COMSOL Multiphysics 平台与专业附加模块</p>
+        <p data-i18n="prod.banner.desc">COMSOL 产品库：多物理场仿真平台、仿真 App 部署产品与专业附加模块</p>
+      </div>
+    </section>
+
+    <!-- Product library intro -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="prod.suite.title">COMSOL 产品库</h2>
+        </div>
+        <div style="max-width:860px;margin:0 auto;">
+          <p data-i18n="prod.suite.p1" style="margin-bottom:14px;color:var(--muted);line-height:1.8;"></p>
+          <p data-i18n="prod.suite.p2" style="color:var(--muted);line-height:1.8;"></p>
+        </div>
       </div>
     </section>
 
     <!-- Platform -->
-    <section class="section">
+    <section class="section soft">
       <div class="container">
         <div class="section-head">
           <h2 data-i18n="prod.platform.title">COMSOL Multiphysics 仿真平台</h2>
-          <p data-i18n="prod.platform.desc">COMSOL Multiphysics 是一款功能强大的通用多物理场仿真软件，可建模分析电磁、结构、声学、流体、传热、化学以及这些物理场之间的耦合，广泛应用于产品研发、工艺优化与科学研究的各个领域。</p>
+          <p data-i18n="prod.platform.desc">COMSOL Multiphysics 一款适用于各个工程、制造和科研领域的通用多物理场仿真软件，支持模拟电磁、结构力学、声学、流体流动、传热、化学等物理场及其之间的任意耦合。平台内置模型开发器、App 开发器与模型管理器三大组件，配合丰富的附加模块与接口产品，提供从几何建模、物理场设置、网格划分、求解计算到结果分析的一致化工作流程。</p>
+        </div>
+        <div class="grid">
+          <div class="card">
+            <div class="icon">🧩</div>
+            <h3 data-i18n="prod.comp1">模型开发器</h3>
+            <p data-i18n="prod.comp1.d">完整覆盖几何与 CAD、基于物理场或方程建模、网格划分、研究与优化、求解以及可视化的全生命周期建模工作流。</p>
+          </div>
+          <div class="card">
+            <div class="icon">🖥️</div>
+            <h3 data-i18n="prod.comp2">App 开发器</h3>
+            <p data-i18n="prod.comp2.d">将专业仿真模型封装为带专属界面的仿真 App，供设计、制造、运营团队及客户中的非仿真专业人员便捷使用。</p>
+          </div>
+          <div class="card">
+            <div class="icon">🗂️</div>
+            <h3 data-i18n="prod.comp3">模型管理器</h3>
+            <p data-i18n="prod.comp3.d">集中管理仿真数据，支持版本控制、协同开发、标签分类检索与精细的访问权限设置。</p>
+          </div>
+        </div>
+        <p class="card-more" style="text-align:center;margin-top:28px;"><a href="products/platform.html" data-i18n="prod.view">查看平台详情 →</a></p>
+      </div>
+    </section>
+
+    <!-- App deployment -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="prod.deploy.title">仿真 App 的部署产品</h2>
+          <p data-i18n="prod.deploy.desc">将仿真 App 便捷地分发到设计、制造、运营和客户手中，让仿真成果贯通分析、设计与生产全流程。</p>
+        </div>
+        <div class="grid two">
+          <div class="card">
+            <div class="icon">📦</div>
+            <h3 data-i18n="prod.compiler">COMSOL Compiler™</h3>
+            <p data-i18n="prod.compiler.d">COMSOL Multiphysics 的附加产品，用于将仿真 App 编译为可独立运行的应用程序，无需安装 COMSOL 软件即可运行。</p>
+          </div>
+          <div class="card">
+            <div class="icon">🖧</div>
+            <h3 data-i18n="prod.server">COMSOL Server™</h3>
+            <p data-i18n="prod.server.d">仿真 App 的管理与部署工具，支持通过网页浏览器或瘦客户端在组织内部和外部集中运行仿真 App，实现高效协作。</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Modules -->
+    <!-- Add-on modules -->
     <section class="section soft">
       <div class="container">
         <div class="section-head">
-          <span class="tag">COMSOL</span>
-          <h2 data-i18n="prod.modules.title">专业附加模块</h2>
-          <p data-i18n="prod.modules.desc">可根据应用需求灵活选配，COMSOL 提供数十种专业附加模块，深入覆盖各领域建模。</p>
+          <h2 data-i18n="prod.modules.title">专业附加模块与接口产品</h2>
+          <p data-i18n="prod.modules.desc">所有附加模块和接口产品均基于 COMSOL Multiphysics 平台组合使用，提供一致、高效的建模流程，覆盖电磁、结构力学、声学、流体与传热、化工以及多功能与数据接口等领域。</p>
         </div>
-
         <div class="grid">
           <div class="card">
+            <div class="icon">⚡</div>
+            <h3><a href="products/em.html" data-i18n="mod.cat.em">电磁</a></h3>
+            <p data-i18n="catd.em">覆盖 AC/DC、RF、光学、等离子体、放电与半导体的完整电磁建模仿真能力。</p>
+            <div class="mod-list">
+              <a href="products/em.html" data-i18n="mod.acdc"></a>
+              <a href="products/em.html" data-i18n="mod.rf"></a>
+              <a href="products/em.html" data-i18n="mod.waveopt"></a>
+              <a href="products/em.html" data-i18n="mod.rayopt"></a>
+              <a href="products/em.html" data-i18n="mod.plasma"></a>
+              <a href="products/em.html" data-i18n="mod.discharge"></a>
+              <a href="products/em.html" data-i18n="mod.semicon"></a>
+            </div>
+            <p class="card-more"><a href="products/em.html" data-i18n="prod.view">查看模块 →</a></p>
+          </div>
+          <div class="card">
             <div class="icon">🌊</div>
-            <h3 data-i18n="mod.cfd">CFD 计算流体力学</h3>
-            <p data-i18n="mod.cfd.d">层流/湍流、多相流、自由表面与流固耦合等流体仿真。</p>
+            <h3><a href="products/fluid.html" data-i18n="mod.cat.fluid">流体 &amp; 传热</a></h3>
+            <p data-i18n="catd.fluid">从层流湍流、多相流到传热与金属加工的流体与热分析全谱系模块。</p>
+            <div class="mod-list">
+              <a href="products/fluid.html" data-i18n="mod.cfd"></a>
+              <a href="products/fluid.html" data-i18n="mod.mixer"></a>
+              <a href="products/fluid.html" data-i18n="mod.polymer"></a>
+              <a href="products/fluid.html" data-i18n="mod.microfluid"></a>
+              <a href="products/fluid.html" data-i18n="mod.porous"></a>
+              <a href="products/fluid.html" data-i18n="mod.subsurface"></a>
+              <a href="products/fluid.html" data-i18n="mod.pipe"></a>
+              <a href="products/fluid.html" data-i18n="mod.molecular"></a>
+              <a href="products/fluid.html" data-i18n="mod.granular"></a>
+              <a href="products/fluid.html" data-i18n="mod.metal"></a>
+              <a href="products/fluid.html" data-i18n="mod.heat"></a>
+            </div>
+            <p class="card-more"><a href="products/fluid.html" data-i18n="prod.view">查看模块 →</a></p>
           </div>
           <div class="card">
             <div class="icon">🏗️</div>
-            <h3 data-i18n="mod.struct">结构力学</h3>
-            <p data-i18n="mod.struct.d">结构静力/动力分析、疲劳与复合材料力学。</p>
+            <h3><a href="products/struct.html" data-i18n="mod.cat.struct">结构 &amp; 声学</a></h3>
+            <p data-i18n="catd.struct">涵盖线性/非线性结构、复合材料、疲劳、转子与多体动力学的结构声学模块群。</p>
+            <div class="mod-list">
+              <a href="products/struct.html" data-i18n="mod.struct"></a>
+              <a href="products/struct.html" data-i18n="mod.nlstruct"></a>
+              <a href="products/struct.html" data-i18n="mod.composite"></a>
+              <a href="products/struct.html" data-i18n="mod.geomech"></a>
+              <a href="products/struct.html" data-i18n="mod.fatigue"></a>
+              <a href="products/struct.html" data-i18n="mod.rotor"></a>
+              <a href="products/struct.html" data-i18n="mod.multibody"></a>
+              <a href="products/struct.html" data-i18n="mod.mems"></a>
+              <a href="products/struct.html" data-i18n="mod.acoustics"></a>
+            </div>
+            <p class="card-more"><a href="products/struct.html" data-i18n="prod.view">查看模块 →</a></p>
           </div>
           <div class="card">
-            <div class="icon">🔊</div>
-            <h3 data-i18n="mod.acoustics">声学</h3>
-            <p data-i18n="mod.acoustics.d">声压、结构声、振动与噪声分析及消声器、扬声器应用。</p>
-          </div>
-          <div class="card">
-            <div class="icon">🔥</div>
-            <h3 data-i18n="mod.heat">传热</h3>
-            <p data-i18n="mod.heat.d">传导、对流、辐射与相变传热，含电子散热与热管理应用。</p>
-          </div>
-          <div class="card">
-            <div class="icon">⚡</div>
-            <h3 data-i18n="mod.electro">电磁与电磁场</h3>
-            <p data-i18n="mod.electro.d">静电场、磁场、电磁波、RF 与微波器件仿真。</p>
-          </div>
-          <div class="card">
-            <div class="icon">🔬</div>
-            <h3 data-i18n="mod.semicon">半导体模块</h3>
-            <p data-i18n="mod.semicon.d">基于漂移-扩散方程与泊松方程模拟双极晶体管、MOSFET、IGBT、太阳能电池及 LED、激光二极管等器件，并可耦合传热与结构力学，用于半导体制造工艺、先进封装应力与散热分析。</p>
-          </div>
-          <div class="card">
-            <div class="icon">⚛️</div>
-            <h3 data-i18n="mod.particle">粒子追踪</h3>
-            <p data-i18n="mod.particle.d">带电粒子、质量粒子的运动与碰撞，喷镀、分离器等应用。</p>
-          </div>
-          <div class="card">
-            <div class="icon">🧪</div>
-            <h3 data-i18n="mod.mems">MEMS 与微流控</h3>
-            <p data-i18n="mod.mems.d">微机电系统、微流控芯片、电渗流与分离微结构仿真。</p>
+            <div class="icon">⚗️</div>
+            <h3><a href="products/chem.html" data-i18n="mod.cat.chem">化工</a></h3>
+            <p data-i18n="catd.chem">面向反应工程、电池、燃料电池、电镀与腐蚀的电化学化工模块。</p>
+            <div class="mod-list">
+              <a href="products/chem.html" data-i18n="mod.chem"></a>
+              <a href="products/chem.html" data-i18n="mod.battery"></a>
+              <a href="products/chem.html" data-i18n="mod.fuelcell"></a>
+              <a href="products/chem.html" data-i18n="mod.electrodep"></a>
+              <a href="products/chem.html" data-i18n="mod.corrosion"></a>
+              <a href="products/chem.html" data-i18n="mod.electrochem"></a>
+            </div>
+            <p class="card-more"><a href="products/chem.html" data-i18n="prod.view">查看模块 →</a></p>
           </div>
           <div class="card">
             <div class="icon">🎯</div>
-            <h3 data-i18n="mod.optim">优化与参数估计</h3>
-            <p data-i18n="mod.optim.d">参数优化、形状优化与拓扑优化，辅助工程设计决策。</p>
+            <h3><a href="products/multi.html" data-i18n="mod.cat.multipurpose">多功能</a></h3>
+            <p data-i18n="catd.multi">优化、不确定性量化、材料库、粒子追踪与气液属性的多功能工具。</p>
+            <div class="mod-list">
+              <a href="products/multi.html" data-i18n="mod.optim"></a>
+              <a href="products/multi.html" data-i18n="mod.uq"></a>
+              <a href="products/multi.html" data-i18n="mod.matlib"></a>
+              <a href="products/multi.html" data-i18n="mod.particle"></a>
+              <a href="products/multi.html" data-i18n="mod.lg"></a>
+            </div>
+            <p class="card-more"><a href="products/multi.html" data-i18n="prod.view">查看模块 →</a></p>
+          </div>
+          <div class="card">
+            <div class="icon">🔗</div>
+            <h3><a href="products/interface.html" data-i18n="mod.cat.interface">接口</a></h3>
+            <p data-i18n="catd.interface">与 MATLAB、Simulink、Excel 及主流 CAD/ECAD 软件的无缝集成接口。</p>
+            <div class="mod-list">
+              <a href="products/interface.html" data-i18n="mod.livelink-matlab"></a>
+              <a href="products/interface.html" data-i18n="mod.livelink-simulink"></a>
+              <a href="products/interface.html" data-i18n="mod.livelink-excel"></a>
+              <a href="products/interface.html" data-i18n="mod.cadimport"></a>
+              <a href="products/interface.html" data-i18n="mod.design"></a>
+              <a href="products/interface.html" data-i18n="mod.ecad"></a>
+              <a href="products/interface.html" data-i18n="mod.sw"></a>
+              <a href="products/interface.html" data-i18n="mod.inventor"></a>
+              <a href="products/interface.html" data-i18n="mod.autocad"></a>
+              <a href="products/interface.html" data-i18n="mod.revit"></a>
+              <a href="products/interface.html" data-i18n="mod.solidedge"></a>
+              <a href="products/interface.html" data-i18n="mod.catia"></a>
+            </div>
+            <p class="card-more"><a href="products/interface.html" data-i18n="prod.view">查看模块 →</a></p>
           </div>
         </div>
       </div>

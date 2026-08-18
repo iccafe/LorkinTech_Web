@@ -68,65 +68,369 @@
     // ---------- Products pages ----------
     "prod.banner.title": { zh: "产品介绍", en: "Products" },
     "prod.banner.desc": {
-      zh: "COMSOL Multiphysics 平台与专业附加模块",
-      en: "COMSOL Multiphysics Platform and Its Modules"
+      zh: "COMSOL 产品库：多物理场仿真平台、仿真 App 部署产品与专业附加模块",
+      en: "The COMSOL product suite: multiphysics simulation platform, simulation app deployment products, and add-on modules"
     },
+
+    // -- Product library intro --
+    "prod.suite.title": { zh: "COMSOL 产品库", en: "The COMSOL Product Suite" },
+    "prod.suite.p1": {
+      zh: "COMSOL Multiphysics® 是一款适用于各个工程、制造和科研领域的通用多物理场仿真软件，支持模拟单个物理场、灵活耦合多个物理场，并提供仿真 App 开发与模型管理等工具。附加产品 COMSOL Compiler™ 和 COMSOL Server™ 帮助您轻松地分发、部署仿真 App，实现高效协作，让仿真分析赋能设计、制造与研发部门以及其他合作者。",
+      en: "COMSOL Multiphysics® is a general-purpose multiphysics simulation software for engineering, manufacturing, and scientific research. It models single or flexibly coupled multiphysics problems and provides tools for simulation app development and model management. Add-on products COMSOL Compiler™ and COMSOL Server™ let you easily distribute and deploy simulation apps for efficient collaboration, empowering design, manufacturing, and R&D teams as well as partners."
+    },
+    "prod.suite.p2": {
+      zh: "丰富的附加模块为电磁、结构力学、声学、流体流动、传热和化工等领域提供专业的分析功能，所有附加模块都可以与 COMSOL Multiphysics® 组合使用，提供一致的建模工作流程和使用体验。同时，多个接口产品还支持与 CAD 和其他第三方软件的链接，为您提供更全面的仿真解决方案。",
+      en: "A rich portfolio of add-on modules delivers specialized analysis for electromagnetics, structural mechanics, acoustics, fluid flow, heat transfer, and chemical engineering. All add-on modules can be combined with COMSOL Multiphysics®, offering a consistent modeling workflow and experience. Interface products also link with CAD and other third-party software for a more complete simulation solution."
+    },
+
+    // -- Platform --
     "prod.platform.title": { zh: "COMSOL Multiphysics 仿真平台", en: "COMSOL Multiphysics Simulation Platform" },
     "prod.platform.desc": {
-      zh: "COMSOL Multiphysics 是一款功能强大的通用多物理场仿真软件，可用于建模分析电磁、结构、声学、流体、传热、化学以及这些物理场之间的耦合，广泛应用于产品研发、工艺优化与科学研究的各个领域。",
-      en: "COMSOL Multiphysics is a powerful general-purpose multiphysics simulation software used to model and analyze electromagnetics, structures, acoustics, fluid flow, heat transfer, chemistry, and the coupling between these physics — broadly applied in product R&D, process optimization, and scientific research."
+      zh: "COMSOL Multiphysics 一款适用于各个工程、制造和科研领域的通用多物理场仿真软件，支持模拟电磁、结构力学、声学、流体流动、传热、化学等物理场及其之间的任意耦合。平台内置模型开发器、App 开发器与模型管理器三大组件，配合丰富的附加模块与接口产品，提供从几何建模、物理场设置、网格划分、求解计算到结果分析的一致化工作流程。",
+      en: "COMSOL Multiphysics is a general-purpose multiphysics simulation software applicable to engineering, manufacturing, and scientific research. It supports modeling and arbitrary coupling of electromagnetics, structural mechanics, acoustics, fluid flow, heat transfer, and chemistry. The platform includes three core components — the Model Builder, Application Builder, and Model Manager — and, together with a rich portfolio of add-on and interface products, delivers a consistent workflow from geometry modeling and physics setup to meshing, solving, and result analysis."
     },
-    "prod.modules.title": { zh: "专业附加模块", en: "Dedicated Add-on Modules" },
+    "prod.comp1": { zh: "模型开发器", en: "Model Builder" },
+    "prod.comp1.d": {
+      zh: "完整覆盖几何与 CAD、基于物理场或方程建模、网格划分、研究与优化、求解以及可视化的全生命周期建模工作流。",
+      en: "A complete modeling lifecycle covering geometry and CAD, physics- and equation-based modeling, meshing, studies and optimization, solving, and visualization."
+    },
+    "prod.comp2": { zh: "App 开发器", en: "Application Builder" },
+    "prod.comp2.d": {
+      zh: "将专业仿真模型封装为带专属界面的仿真 App，供设计、制造、运营团队及客户中的非仿真专业人员便捷使用。",
+      en: "Turn simulation models into standalone simulation apps with dedicated user interfaces, usable by non-experts on design, manufacturing, operations teams and with customers."
+    },
+    "prod.comp3": { zh: "模型管理器", en: "Model Manager" },
+    "prod.comp3.d": {
+      zh: "集中管理仿真数据，支持版本控制、协同开发、标签分类检索与精细的访问权限设置。",
+      en: "Centrally manage simulation data with version control, collaborative development, tagged search, and fine-grained access control."
+    },
+
+    // -- App deployment --
+    "prod.deploy.title": { zh: "仿真 App 的部署产品", en: "Simulation App Deployment Products" },
+    "prod.deploy.desc": {
+      zh: "将仿真 App 便捷地分发到设计、制造、运营和客户手中，让仿真成果贯通分析、设计与生产全流程。",
+      en: "Distribute simulation apps to design, manufacturing, operations teams and customers, bridging simulation from analysis through design to production."
+    },
+    "prod.compiler": { zh: "COMSOL Compiler™", en: "COMSOL Compiler™" },
+    "prod.compiler.d": {
+      zh: "COMSOL Multiphysics 的附加产品，用于将仿真 App 编译为可独立运行的应用程序，无需安装 COMSOL 软件即可运行。",
+      en: "An add-on to COMSOL Multiphysics that compiles simulation apps into standalone applications that run without a COMSOL installation."
+    },
+    "prod.server": { zh: "COMSOL Server™", en: "COMSOL Server™" },
+    "prod.server.d": {
+      zh: "仿真 App 的管理与部署工具，支持通过网页浏览器或瘦客户端在组织内部和外部集中运行仿真 App，实现高效协作。",
+      en: "A management and deployment tool for simulation apps, enabling centralized app execution on web browsers and thin clients, inside and outside an organization."
+    },
+
+    // -- Modules --
+    "prod.modules.title": { zh: "专业附加模块与接口产品", en: "Add-on Modules and Interface Products" },
     "prod.modules.desc": {
-      zh: "可根据应用需求灵活选配，COMSOL 提供数十种专业附加模块，深入覆盖各领域建模。",
-      en: "Flexibly selectable to fit application needs. COMSOL offers dozens of dedicated modules covering in-depth modeling in various areas."
+      zh: "所有附加模块和接口产品均基于 COMSOL Multiphysics 平台组合使用，提供一致、高效的建模流程，覆盖电磁、结构力学、声学、流体与传热、化工以及多功能与数据接口等领域。",
+      en: "All add-on modules and interface products are used with the COMSOL Multiphysics platform, offering a consistent and efficient modeling workflow across electromagnetics, structural mechanics, acoustics, fluid flow and heat transfer, chemical engineering, and multipurpose and interface capabilities."
     },
-    "mod.cfd": { zh: "CFD 计算流体力学", en: "CFD Module" },
-    "mod.cfd.d": {
-      zh: "层流/湍流、多相流、自由表面与流固耦合等流体仿真。",
-      en: "Laminar/turbulent flow, multiphase flow, free surfaces, and fluid-structure interaction."
+    
+    // Cat
+    "mod.cat.em": { zh: "电磁", en: "Electromagnetics" },
+    "mod.cat.fluid": { zh: "流体 & 传热", en: "Fluid Flow & Heat Transfer" },
+    "mod.cat.struct": { zh: "结构 & 声学", en: "Structural Mechanics & Acoustics" },
+    "mod.cat.chem": { zh: "化工", en: "Chemical Engineering" },
+    "mod.cat.multipurpose": { zh: "多功能", en: "Multipurpose" },
+    "mod.cat.interface": { zh: "接口", en: "Interfaces" },
+
+    "catd.em": {
+      zh: "覆盖 AC/DC、RF、光学、等离子体、放电与半导体的完整电磁建模仿真能力。",
+      en: "Complete electromagnetics modeling from AC/DC, RF, optics, plasma, and discharge to semiconductors."
     },
-    "mod.struct": { zh: "结构力学", en: "Structural Mechanics Module" },
-    "mod.struct.d": {
-      zh: "结构静力/动力分析、疲劳与复合材料力学。",
-      en: "Static and dynamic structural analysis, fatigue, and composite mechanics."
+    "catd.fluid": {
+      zh: "从层流湍流、多相流到传热与金属加工的流体与热分析全谱系模块。",
+      en: "A full spectrum of fluid flow and heat transfer modules, from laminar and turbulent to multiphase and metal processing."
     },
-    "mod.acoustics": { zh: "声学", en: "Acoustics Module" },
-    "mod.acoustics.d": {
-      zh: "声压、结构声、振动与噪声分析及消声器、扬声器应用。",
-      en: "Pressure acoustics, structural acoustics, vibration and noise analysis for mufflers and loudspeakers."
+    "catd.struct": {
+      zh: "涵盖线性/非线性结构、复合材料、疲劳、转子与多体动力学的结构声学模块群。",
+      en: "Structural and acoustic modules covering linear/nonlinear analysis, composites, fatigue, rotordynamics, and multibody dynamics."
     },
-    "mod.heat": { zh: "传热", en: "Heat Transfer Module" },
-    "mod.heat.d": {
-      zh: "传导、对流、辐射与相变传热，含电子散热与热管理应用。",
-      en: "Conduction, convection, radiation, and phase-change heat transfer including electronics cooling and thermal management."
+    "catd.chem": {
+      zh: "面向反应工程、电池、燃料电池、电镀与腐蚀的电化学化工模块。",
+      en: "Chemical engineering modules for reaction engineering, batteries, fuel cells, electrodeposition, and corrosion."
     },
-    "mod.electro": { zh: "电磁与电磁场", en: "AC/DC & RF Module" },
-    "mod.electro.d": {
-      zh: "静电场、磁场、电磁波、RF 与微波器件仿真。",
-      en: "Electrostatics, magnetics, electromagnetic waves, RF, and microwave device simulation."
+    "catd.multi": {
+      zh: "优化、不确定性量化、材料库、粒子追踪与气液属性的多功能工具。",
+      en: "Multipurpose tools for optimization, uncertainty quantification, material library, particle tracing, and fluid properties."
+    },
+    "catd.interface": {
+      zh: "与 MATLAB、Simulink、Excel 及主流 CAD/ECAD 软件的无缝集成接口。",
+      en: "Seamless interfaces with MATLAB, Simulink, Excel, and leading CAD/ECAD software."
+    },
+    "catd.platform": {
+      zh: "通用多物理场仿真平台，内置模型开发器、App 开发器与模型管理器。",
+      en: "General-purpose multiphysics simulation platform with Model Builder, Application Builder, and Model Manager."
+    },
+    "back.products": { zh: "← 返回产品介绍", en: "← Back to Products" },
+    "prod.view": { zh: "查看模块", en: "View Modules" },
+    "prod.platform.card.title": { zh: "COMSOL Multiphysics 平台", en: "COMSOL Multiphysics Platform" },
+
+    // EM (7)
+    "mod.acdc": { zh: "AC/DC 模块", en: "AC/DC Module" },
+    "mod.acdc.d": {
+      zh: "针对电机、变压器、制动器、高压隔离开关等低频电磁应用，仿真静电场、电流场、磁场与电磁力，支持与结构、传热及电路耦合。",
+      en: "Designed for low-frequency electromagnetic applications such as motors, transformers, brakes, and high-voltage switchgear, modeling electrostatics, current, magnetic fields, and electromagnetic forces, with coupling to structural, thermal, and circuit simulations."
+    },
+    "mod.rf": { zh: "RF 模块", en: "RF Module" },
+    "mod.rf.d": {
+      zh: "面向射频与微波器件，仿真天线、滤波器、波导与微带电路，支持 S 参数、谐波分析及与传热、结构耦合，广泛用于 5G 与无线通信。",
+      en: "For RF and microwave devices, simulating antennas, filters, waveguides, and microstrip circuits with S-parameters and harmonic analysis, coupled to thermal and structural analysis, widely used in 5G and wireless communication."
+    },
+    "mod.waveopt": { zh: "波动光学模块", en: "Wave Optics Module" },
+    "mod.waveopt.d": {
+      zh: "基于 Maxwell 方程仿真光的传播、衍射、干涉与偏振，适用于光波导、光子晶体、超表面与衍射光栅等微纳光学器件。",
+      en: "Simulates wave propagation, diffraction, interference, and polarization based on Maxwell's equations, for waveguides, photonic crystals, metasurfaces, and diffraction gratings in micro- and nano-optics."
+    },
+    "mod.rayopt": { zh: "射线光学模块", en: "Ray Optics Module" },
+    "mod.rayopt.d": {
+      zh: "采用几何光学光线追踪法仿真透镜组、照明系统与光学成像，支持数千条光线的并行追踪及与结构、传热耦合。",
+      en: "Uses ray-tracing geometric optics for lens systems, illumination, and imaging, with parallel tracing of thousands of rays and coupling to structural and thermal analysis."
+    },
+    "mod.plasma": { zh: "等离子体模块", en: "Plasma Module" },
+    "mod.plasma.d": {
+      zh: "仿真电晕放电、电容耦合等离子体与等离子体化学，支持与流体、传热及化学反应的耦合，用于半导体刻蚀、镀膜等工艺。",
+      en: "Models corona discharge, capacitively coupled plasmas, and plasma chemistry, coupled with fluid flow, heat transfer, and chemical reactions, for semiconductor etching and deposition processes."
+    },
+    "mod.discharge": { zh: "放电模块", en: "Electric Discharge Module" },
+    "mod.discharge.d": {
+      zh: "仿真气体放电、电晕与放电的击穿过程，支持表面电荷与流体耦合，应用于绝缘设计、静电除尘与保护器件。",
+      en: "Simulates gas discharges, corona, and breakdown phenomena with surface charge and fluid coupling, for insulation design, electrostatic precipitators, and protective devices."
     },
     "mod.semicon": { zh: "半导体模块", en: "Semiconductor Module" },
     "mod.semicon.d": {
-      zh: "基于漂移-扩散方程与泊松方程模拟双极晶体管、MOSFET、IGBT、太阳能电池及 LED、激光二极管等器件，并可耦合传热与结构力学，用于半导体制造工艺、先进封装应力与散热分析。",
-      en: "Simulate BJTs, MOSFETs, IGBTs, solar cells, LEDs, and laser diodes via coupled drift-diffusion and Poisson equations, and couple with heat transfer and structural mechanics for semiconductor manufacturing, advanced packaging stress, and thermal analysis."
+      zh: "基于漂移-扩散方程与泊松方程模拟双极晶体管、MOSFET、IGBT、太阳能电池及 LED、激光二极管等半导体器件，并可耦合传热与结构力学，用于半导体制造工艺与先进封装分析。",
+      en: "Simulates semiconductor devices such as BJTs, MOSFETs, IGBTs, solar cells, LEDs, and laser diodes using drift-diffusion and Poisson equations, with coupling to heat transfer and structural mechanics for manufacturing and advanced packaging analysis."
     },
 
-    "mod.particle": { zh: "粒子追踪", en: "Particle Tracing Module" },
-    "mod.particle.d": {
-      zh: "带电粒子、质量粒子的运动与碰撞，喷镀、分离器等应用。",
-      en: "Trajectories and collisions of charged and mass particles for sputtering, separators, and more."
+    // Fluid & heat (11)
+    "mod.cfd": { zh: "CFD 模块", en: "CFD Module" },
+    "mod.cfd.d": {
+      zh: "领先生物、制药、食品等行业的计算流体动力学建模，涵盖层流与湍流、多相流、自由表面及流固耦合，可扩展至化学反应的仿真。",
+      en: "Industry-leading CFD modeling for biomedical, pharmaceutical, and food applications, including laminar and turbulent flow, multiphase flow, free surfaces, and fluid-structure interaction, extendable to reacting flows."
     },
-    "mod.mems": { zh: "MEMS 与微流控", en: "MEMS & Microfluidics Module" },
+    "mod.mixer": { zh: "搅拌器模块", en: "Mixer Module" },
+    "mod.mixer.d": {
+      zh: "面向旋转机械的专用仿真工具，可自动处理旋转域、叶轮与搅拌器几何，常用的建模方法可用于有序仿真、混合和反应研究。",
+      en: "A dedicated tool for rotating machinery, automatically handling rotating domains, impellers, and mixer geometries, with methods for orderly pattern simulation, mixing, and reaction studies."
+    },
+    "mod.polymer": { zh: "聚合物流动模块", en: "Polymer Flow Module" },
+    "mod.polymer.d": {
+      zh: "基于广义牛顿与非牛顿本构模型仿真聚合物加工，覆盖注塑、吹塑、挤出与热成型中的流动、传热与结晶行为。",
+      en: "Models polymer processing using generalized Newtonian and non-Newtonian constitutive models, covering flow, heat transfer, and crystallization in injection molding, blow molding, extrusion, and thermoforming."
+    },
+    "mod.microfluid": { zh: "微流体模块", en: "Microfluidics Module" },
+    "mod.microfluid.d": {
+      zh: "面向微尺度流体，支持 Creeping Flow、电渗流、收缩流与表面张力效应，应用于芯片实验室、微混合器与微分离器件。",
+      en: "For microscale flows with creeping flow, electroosmosis, contractions, and surface tension effects, applied to lab-on-a-chip, micromixers, and micro-separation devices."
+    },
+    "mod.porous": { zh: "多孔介质流模块", en: "Porous Media Flow Module" },
+    "mod.porous.d": {
+      zh: "仿真多孔介质中的流动、多相流、自由流动耦合与反应性传输，用于过滤、土壤修复、燃料电池与岩体渗流分析。",
+      en: "Simulates flow in porous media, including multiphase flow, coupling to free flow, and reactive transport, for filtration, soil remediation, fuel cells, and subsurface seepage."
+    },
+    "mod.subsurface": { zh: "地下水流模块", en: "Subsurface Flow Module" },
+    "mod.subsurface.d": {
+      zh: "仿真饱和与非饱和地下水流动、多组分溶质传输与热度传导，支持地质力学耦合，应用于含水层评价、环境影响评估与地热能。",
+      en: "Simulates saturated and unsaturated groundwater flow, multi-species solute transport, and heat transfer with geomechanics coupling, for aquifer assessment, environmental impact, and geothermal energy."
+    },
+    "mod.pipe": { zh: "管道流模块", en: "Pipe Flow Module" },
+    "mod.pipe.d": {
+      zh: "面向管道、沟槽及网络化流体系统的布局仿真，可包含压力波、热量传递与瞬态效应，应用于大型管网与流体输送系统设计。",
+      en: "Simulates flow in pipes, grooves, and networked fluid systems, including pressure waves, heat transfer, and transient effects, applied to large-scale piping and fluid delivery systems."
+    },
+    "mod.molecular": { zh: "分子流模块", en: "Molecular Flow Module" },
+    "mod.molecular.d": {
+      zh: "基于用户控制、可视化定义的自由分子流域，仿真真空系统与极稀薄气体中的分子流，用于真空设备与高真空工艺设计。",
+      en: "Models molecular flow in vacuum systems and extremely rarefied gases based on user-controlled, visual free-molecular flow domains, for vacuum equipment and high-vacuum processes."
+    },
+    "mod.granular": { zh: "颗粒流模块", en: "Granular Flow Module" },
+    "mod.granular.d": {
+      zh: "仿真散料、颗粒物料与悬杂流的流动行为，可用于料斗、筒仓、输送与沉降过程的设计与优化。",
+      en: "Simulates the flow behavior of bulk solids, granular materials, and suspensions, for the design and optimization of hoppers, silos, conveying, and sedimentation."
+    },
+    "mod.metal": { zh: "金属加工模块", en: "Metal Processing Module" },
+    "mod.metal.d": {
+      zh: "面向金属加工工业应用中的流体流动与热量传递建模，可加入相变、湍流与电磁感应，应用于铸造、淬火与感应加热分析。",
+      en: "Models fluid flow and heat transfer in metal processing, adding phase change, turbulence, and electromagnetic induction for casting, quenching, and induction heating analysis."
+    },
+    "mod.heat": { zh: "传热模块", en: "Heat Transfer Module" },
+    "mod.heat.d": {
+      zh: "涵盖传导、对流与辐射传热，支持薄结构、相变、驻点传热与复合材料等应用，并可与流体流动、电磁、结构和反应工程耦合。",
+      en: "Covers conduction, convection, and radiation, supporting thin structures, phase change, stagnation heat transfer, and composite applications, coupled to fluid flow, electromagnetics, structures, and reaction engineering."
+    },
+
+    // Structural & acoustic (9)
+    "mod.struct": { zh: "结构力学模块", en: "Structural Mechanics Module" },
+    "mod.struct.d": {
+      zh: "用于结构分析，包括势场与应变场建模、线性与非线性分析、动态加载等，包含大型的零件库，可用于涉及力学与多物理耦合的分析。",
+      en: "For structural analysis including stress and strain fields, linear and nonlinear analysis, and dynamic loads, with a large parts library for mechanical and multiphysics applications."
+    },
+    "mod.nlstruct": { zh: "非线性结构材料模块", en: "Nonlinear Structural Materials Module" },
+    "mod.nlstruct.d": {
+      zh: "提供超弹性、粘弹性、塑性、蠕变等非线性材料模型，模拟橡胶、聚合物与金属等材料的大变形与疲劳失效行为。",
+      en: "Provides nonlinear material models such as hyperelastic, viscoelastic, plastic, and creep behavior, simulating large deformations and failure in rubbers, polymers, and metals."
+    },
+    "mod.composite": { zh: "复合材料模块", en: "Composite Materials Module" },
+    "mod.composite.d": {
+      zh: "建立特定铺层的复合材料模型，分析复合材料层合板的内部应力和失效模式，评估各材料组分对整体性能的影响。",
+      en: "Builds ply-based composite models, analyzing interlaminar stresses and failure modes in laminated composites and the effect of material constituents on overall performance."
+    },
+    "mod.geomech": { zh: "岩土力学模块", en: "Geomechanics Module" },
+    "mod.geomech.d": {
+      zh: "面向土木与地质工程的结构分析，支持多孔介质中的固结、硬化土壤模型及动力学分析，应用于隧道、边坡与地基工程。",
+      en: "Structural analysis for civil and geotechnical engineering, supporting consolidation, hardening soil models, and dynamic analysis in porous media, for tunnels, slopes, and foundations."
+    },
+    "mod.fatigue": { zh: "疲劳模块", en: "Fatigue Module" },
+    "mod.fatigue.d": {
+      zh: "基于应力寿命、应变寿命与积累的疲劳分析评估结构的疲劳性能，支持不同周期与加载条件的分析，并可作为结构工程的组成部分。",
+      en: "Evaluates structural fatigue using stress-life, strain-life, and cumulative fatigue criteria under various load cycles and conditions, integrated into structural engineering studies."
+    },
+    "mod.rotor": { zh: "转子动力学模块", en: "Rotordynamics Module" },
+    "mod.rotor.d": {
+      zh: "针对旋转机械的转子动力学特性进行仿真，分析临界转速、偏心度与自然频率，涵盖叠加谐波、轴承刚度与不平衡激励等效应。",
+      en: "Simulates rotordynamics of rotating machinery, analyzing critical speeds, eccentricity, and natural frequencies, including harmonic superposition, bearing stiffness, and unbalance excitation."
+    },
+    "mod.multibody": { zh: "多体动力学模块", en: "Multibody Dynamics Module" },
+    "mod.multibody.d": {
+      zh: "通过自动生成的刚性和柔性连接件建立模型，在统一环境中仿真机械装置的动力学行为，可包含齿轮、皮带、链条等传动系统的仿真。",
+      en: "Builds models with automatically generated rigid and flexible joints, simulating the dynamic behavior of mechanical devices in a unified environment, including gears, belts, and chains in transmission systems."
+    },
+    "mod.mems": { zh: "MEMS 模块", en: "MEMS Module" },
     "mod.mems.d": {
-      zh: "微机电系统、微流控芯片、电渗流与分离微结构仿真。",
-      en: "Micro-electromechanical systems, microfluidic chips, electroosmotic flow, and separation microstructures."
+      zh: "专用于微机电系统的设计与分析，为传感器、执行器与微电子机械器件提供应力、静电、压电等多物理场耦合仿真。",
+      en: "Specialized for MEMS design and analysis, providing multiphysics simulation of stress, electrostatics, and piezoelectric effects in sensors, actuators, and micro-electromechanical devices."
     },
-    "mod.optim": { zh: "优化与参数估计", en: "Optimization Module" },
+    "mod.acoustics": { zh: "声学模块", en: "Acoustics Module" },
+    "mod.acoustics.d": {
+      zh: "仿真声压、结构传声、振动与噪声、扩音设备、消声器及扬声器，覆盖声-固、压电-声等多物理场声学建模与分析。",
+      en: "Simulates pressure acoustics, structural acoustics, vibration and noise, loudspeakers, and mufflers, with multiphysics acoustic modeling such as acousto-structural and piezoelectric-acoustic coupling."
+    },
+
+    // Chemical (6)
+    "mod.chem": { zh: "化学反应工程模块", en: "Chemical Reaction Engineering Module" },
+    "mod.chem.d": {
+      zh: "为化学动力学与化学反应提供一个专用接口，可使用用户自定义的动力学表达式，分析质量、能量和动量传递对过程的影响。",
+      en: "Provides a dedicated interface for chemical kinetics and reactions, with user-defined kinetic expressions, analyzing how mass, energy, and momentum transfer influence processes."
+    },
+    "mod.battery": { zh: "电池模块", en: "Battery Design Module" },
+    "mod.battery.d": {
+      zh: "为电化学电池设计提供专用接口，支持电池多尺度、多物理仿真，可针对电池几何结构、材料与制造参数进行尺寸、形状与位置优化。",
+      en: "Provides dedicated interfaces for electrochemical cell design, supporting multiscale, multiphysics battery simulation and sizing, shape, and topology optimization of cell geometry, materials, and manufacturing."
+    },
+    "mod.fuelcell": { zh: "燃料电池和电解槽模块", en: "Fuel Cell & Electrolyzer Module" },
+    "mod.fuelcell.d": {
+      zh: "适用于燃料电池和电解槽中的传导、流动与电化学仿真，支持通过几何、材料与工作条件的变更来分析、改善系统设计。",
+      en: "For modeling conduction, flow, and electrochemistry in fuel cells and electrolyzers, analyzing system designs through changes in geometry, materials, and operating conditions."
+    },
+    "mod.electrodep": { zh: "电镀模块", en: "Electrodeposition Module" },
+    "mod.electrodep.d": {
+      zh: "仿真电场、电流与物质传输驱动的电沉积过程，预测镀层厚度分布，支持与流体和结构耦合，应用于电镀工艺优化。",
+      en: "Simulates electrodeposition driven by electric fields, currents, and mass transport, predicting deposit thickness distributions, coupled with fluid flow and structures for plating process optimization."
+    },
+    "mod.corrosion": { zh: "腐蚀模块", en: "Corrosion Module" },
+    "mod.corrosion.d": {
+      zh: "研究金属材料的电化学腐蚀机理，评估阴极系统、腐蚀抑制剂与涂层设计，可耦合流体与传热用于工程防腐设计。",
+      en: "Studies electrochemical corrosion mechanisms in metals, evaluating cathodic protection, corrosion inhibitors, and coating designs, coupled with flow and heat transfer for engineering corrosion protection."
+    },
+    "mod.electrochem": { zh: "电化学模块", en: "Electrochemistry Module" },
+    "mod.electrochem.d": {
+      zh: "模拟电池、电镀池、腐蚀系统及其他电化学装置的电流、电荷与物质传输，支持与电极表面反应动力学、流体流动的耦合。",
+      en: "Simulates current, charge, and mass transport in batteries, plating baths, corrosion systems, and other electrochemical devices, coupled with electrode kinetics and fluid flow."
+    },
+
+    // Multipurpose (5)
+    "mod.optim": { zh: "优化模块", en: "Optimization Module" },
     "mod.optim.d": {
-      zh: "参数优化、形状优化与拓扑优化，辅助工程设计决策。",
-      en: "Parameter, shape, and topology optimization to support engineering design decisions."
+      zh: "对存在多个目标的工程设计进行参数优化、形状优化与拓扑优化，可与任何物理场结合使用，自动搜索满足约束的最佳设计。",
+      en: "Performs parameter, shape, and topology optimization for multi-objective engineering design, usable with any physics to automatically search for the best design under constraints."
     },
+    "mod.uq": { zh: "不确定性量化模块", en: "Uncertainty Quantification Module" },
+    "mod.uq.d": {
+      zh: "对模型中材料数据、运行条件等不确定性输入进行系统的量化分析，预测模型结果的不确定范围，支持灵敏度与可靠性分析。",
+      en: "Systematically quantifies uncertainty in inputs such as material data and operating conditions, predicting uncertainty bounds in results, with sensitivity and reliability analysis."
+    },
+    "mod.matlib": { zh: "材料库", en: "Material Library" },
+    "mod.matlib.d": {
+      zh: "提供强大的材料属性数据库及材料数据管理工具，支持自定义材料子集与快捷搜索引用，涵盖金属、聚合物、陶瓷、半导体与电池材料等。",
+      en: "Provides a comprehensive database of material properties and management tools, supporting custom material subsets and quick search and access, covering metals, polymers, ceramics, semiconductors, and battery materials."
+    },
+    "mod.particle": { zh: "粒子追踪模块", en: "Particle Tracing Module" },
+    "mod.particle.d": {
+      zh: "仿真带电粒子、中性粒子和质量粒子的运动轨迹与碰撞，可与电磁场、流体流动等物理场耦合，应用于喷镀、分离器、束流分析等。",
+      en: "Simulates trajectories and collisions of charged, neutral, and mass particles, coupled with electromagnetic fields and fluid flow, applied to sputtering, separators, and beam analysis."
+    },
+    "mod.lg": { zh: "气液属性模块", en: "Liquid & Gas Properties Module" },
+    "mod.lg.d": {
+      zh: "提供液体和气体在特定温度与压力下的密度、粘度、导热率等属性数据，可由用户定义混合物，用于更真实的流动与传热仿真。",
+      en: "Provides properties of liquids and gases such as density, viscosity, and thermal conductivity at given temperatures and pressures, with user-defined mixtures for more realistic flow and heat transfer modeling."
+    },
+
+    // Interfaces (10)
+    "mod.livelink-matlab": { zh: "LiveLink™ for MATLAB®", en: "LiveLink™ for MATLAB®" },
+    "mod.livelink-matlab.d": {
+      zh: "将 COMSOL Multiphysics 与 MATLAB 双向集成，可在建模与求解过程中直接调用 MATLAB 脚本和函数。",
+      en: "Bi-directional integration of COMSOL Multiphysics with MATLAB, calling MATLAB scripts and functions directly during modeling and solving."
+    },
+    "mod.livelink-simulink": { zh: "LiveLink™ for Simulink®", en: "LiveLink™ for Simulink®" },
+    "mod.livelink-simulink.d": {
+      zh: "在 Simulink 中将 COMSOL 模型作为 S 函数直接作为控制系统中仿真的组成部分。",
+      en: "Directly integrates COMSOL models as S-functions within Simulink for control system simulation."
+    },
+    "mod.livelink-excel": { zh: "LiveLink™ for Excel®", en: "LiveLink™ for Excel®" },
+    "mod.livelink-excel.d": {
+      zh: "将 COMSOL Multiphysics 与 Excel 紧密集成，可在工作表中交互式创建、修改与计算 COMSOL 模型及仿真 App。",
+      en: "Tight integration of COMSOL Multiphysics with Excel for interactive creation, modification, and computation of COMSOL models and simulation apps in spreadsheets."
+    },
+    "mod.cadimport": { zh: "CAD 导入模块", en: "CAD Import Module" },
+    "mod.cadimport.d": {
+      zh: "导入多种格式的 CAD 几何，提供的“修复与简化”、“不精确固体”与“薄实体数据库”功能可让仿真工程师方便地清理 CAD 模型，以便进行仿真分析。",
+      en: "Imports CAD geometry in multiple formats with features for repairing and simplifying CAD geometry, including imprecise solids and thin solid databases, to make simulation-ready models."
+    },
+    "mod.design": { zh: "设计模块", en: "Design Module" },
+    "mod.design.d": {
+      zh: "提供构造几何形状、布尔操作与参数化 CAD 工具，可在 COMSOL 环境中直接创建和修改几何模型。",
+      en: "Provides geometry construction, Boolean operations, and parametric CAD tools to create and modify geometry directly in the COMSOL environment."
+    },
+    "mod.ecad": { zh: "ECAD 导入模块", en: "ECAD Import Module" },
+    "mod.ecad.d": {
+      zh: "导入 GDS、OASIS、ODB++、IPC 等常见 ECAD 格式的 PCB 布局与封装几何，用于电子器件的热、电磁与结构分析。",
+      en: "Imports PCB layouts and package geometry in common ECAD formats such as GDS, OASIS, ODB++, and IPC, for thermal, electromagnetic, and structural analysis of electronics."
+    },
+    "mod.sw": { zh: "LiveLink™ for SOLIDWORKS®", en: "LiveLink™ for SOLIDWORKS®" },
+    "mod.sw.d": {
+      zh: "在 SOLIDWORKS 环境中同步 COMSOL 模型，实现参数化、CAD 装配体到仿真模型的无缝衔接。",
+      en: "Keeps COMSOL models in sync within SOLIDWORKS for seamless, parametric CAD assembly to simulation."
+    },
+    "mod.inventor": { zh: "LiveLink™ for Inventor®", en: "LiveLink™ for Inventor®" },
+    "mod.inventor.d": {
+      zh: "在 Inventor 环境中将 CAD 模型与 COMSOL 模型保持同步，支持参数化扫描与双向更新。",
+      en: "Keeps CAD and COMSOL models in sync within Inventor with parametric sweeps and bi-directional updates."
+    },
+    "mod.autocad": { zh: "LiveLink™ for AutoCAD®", en: "LiveLink™ for AutoCAD®" },
+    "mod.autocad.d": {
+      zh: "保留 COMSOL 和 AutoCAD 模型的设计与工程参数，同步模拟几何和各自的原生几何。",
+      en: "Synchronizes COMSOL and AutoCAD models, preserving design and engineering parameters for simulation geometry alongside native geometry."
+    },
+    "mod.revit": { zh: "LiveLink™ for Revit®", en: "LiveLink™ for Revit®" },
+    "mod.revit.d": {
+      zh: "在 Revit 中将建筑信息模型（BIM）几何同步至 COMSOL，用于建筑与环境的多物理场仿真。",
+      en: "Synchronizes Building Information Modeling (BIM) geometry from Revit to COMSOL for multiphysics simulation of buildings and the environment."
+    },
+    "mod.solidedge": { zh: "LiveLink™ for Solid Edge®", en: "LiveLink™ for Solid Edge®" },
+    "mod.solidedge.d": {
+      zh: "在 Solid Edge 环境中同步 COMSOL 模型，实现参数化 CAD 到仿真的无缝集成。",
+      en: "Keeps COMSOL models in sync within Solid Edge for seamless parametric CAD to simulation integration."
+    },
+    "mod.catia": { zh: "File Import for CATIA® V5", en: "File Import for CATIA® V5" },
+    "mod.catia.d": {
+      zh: "在 COMSOL Multiphysics 中直接导入 CATIA V5 格式的装配体与零部件几何进行分析。",
+      en: "Directly imports CATIA V5 assemblies and part geometry into COMSOL Multiphysics for analysis."
+    },
+
     "prod.service.title": { zh: "配套服务", en: "Complementary Services" },
     "prod.ps1": { zh: "授权采购与续费", en: "License Purchase & Renewal" },
     "prod.ps2": { zh: "许可证部署与网络化配置", en: "License Deployment & Network Configuration" },
@@ -160,8 +464,8 @@
     },
     "ind.elec": { zh: "电子与半导体", en: "Electronics & Semiconductors" },
     "ind.elec.d": {
-      zh: "覆盖芯片散热与热管理、大功率器件电-热分析、先进封装与 TSV 可靠性、PCB 电磁兼容，以及半导体制造与封装工艺仿真。",
-      en: "Covers chip thermal management, electro-thermal analysis of power devices, advanced packaging and TSV reliability, PCB EMC, and semiconductor manufacturing and packaging process simulation."
+      zh: "覆盖晶圆制造与前道制程、半导体器件设计、先进封装、芯片散热与可靠性评估，以及 PCB 电磁兼容与功率器件电-热分析。",
+      en: "Covers wafer fabrication and front-end processes, semiconductor device design, advanced packaging, chip cooling and reliability assessment, PCB EMC, and power device electro-thermal analysis."
     },
 
     "ind.aero": { zh: "航空航天", en: "Aerospace" },
@@ -179,6 +483,7 @@
       zh: "反应器设计、传热传质过程、搅拌混合与分离单元仿真。",
       en: "Reactor design, heat & mass transfer processes, mixing, and separation unit simulation."
     },
+
     "sol.flow.title": { zh: "合作与服务流程", en: "Engagement & Service Flow" },
     "sol.step1": { zh: "需求沟通", en: "Requirement Discussion" },
     "sol.step1.d": {
@@ -236,32 +541,10 @@
     "con.map.name": { zh: "申能金融大厦", en: "Shenneng Financial Tower" },
 
 "back.solutions": { zh: "← 返回方案介绍", en: "← Back to Solutions" },
-"sem.banner.title": { zh: "半导体行业解决方案", en: "Semiconductor Solutions" },
-"sem.banner.desc": { zh: "从晶圆制造、前道制程、先进封装到器件设计与可靠性的全流程多物理场仿真", en: "End-to-end multiphysics simulation from wafer fabrication and front-end processes to advanced packaging, device design, and reliability" },
-"sem.ov.title": { zh: "从晶圆制造到系统级可靠性的全流程仿真", en: "Full-Process Simulation from Wafer Fab to System-Level Reliability" },
-"sem.ov.desc": { zh: "半导体产业正从平面器件走向 3D 集成与先进封装，制造与封装工艺涉及电、热、力、湿及等离子体等多种物理过程的强耦合。COMSOL Multiphysics 多物理场仿真平台凭借统一的建模环境，覆盖晶圆制造与前道制程、先进封装与封测、器件设计、散热热管理及结构可靠性等完整链路，助力半导体企业缩短研发周期、提升良率与产品可靠性。", en: "The semiconductor industry is evolving from planar devices to 3D integration and advanced packaging, where manufacturing and packaging processes strongly couple electrical, thermal, mechanical, moisture, and plasma phenomena. With its unified modeling environment, the COMSOL Multiphysics platform covers the full chain — wafer fabrication and front-end processes, advanced packaging and test, device design, thermal management, and structural reliability — helping companies shorten R&D cycles, raise yield, and improve reliability." },
-"sem.cap.title": { zh: "核心仿真能力", en: "Core Simulation Capabilities" },
-"sem.app.title": { zh: "典型应用场景", en: "Typical Application Scenarios" },
 "sem.cap1": { zh: "晶圆制造与前道制程", en: "Wafer Fabrication & Front-End Processes" },
 "sem.cap1.d": { zh: "等离子体刻蚀与沉积（ICP/CCP 反应器）、CVD 与外延生长、离子注入及真空系统分子流、光刻与激光加热、CMP 平坦化等工艺设备与过程仿真。", en: "Simulate process equipment and phenomena including plasma etching and deposition (ICP/CCP reactors), CVD and epitaxial growth, ion implantation and molecular flow in vacuum systems, lithography and laser heating, and CMP planarization." },
-"sem.cap2": { zh: "先进封装与封测", en: "Advanced Packaging & Test" },
-"sem.cap2.d": { zh: "TSV 加工、混合键合、倒装键合、薄晶圆拿持等工艺仿真，回流焊残余应力与翘曲控制、塑封固化与脱模，以及高加速应力试验与焊点可靠性分析。", en: "Simulate TSV processing, hybrid bonding, flip-chip bonding, and thin-wafer handling; control reflow residual stress and warpage, molding curing and demolding; and evaluate HAST and solder joint reliability." },
 "sem.cap3": { zh: "半导体器件设计", en: "Semiconductor Device Design" },
 "sem.cap3.d": { zh: "漂移-扩散方程与泊松方程耦合求解，模拟双极晶体管、MOSFET、IGBT、肖特基二极管、p-n 结、太阳能电池及 LED、激光二极管等光电子器件。", en: "Coupled drift-diffusion and Poisson equations for simulating BJTs, MOSFETs, IGBTs, Schottky diodes, p-n junctions, solar cells, and optoelectronic devices such as LEDs and laser diodes." },
-"sem.cap4": { zh: "散热与热管理", en: "Thermal Management" },
-"sem.cap4.d": { zh: "芯片结温与封装热阻评估、功率器件热设计、3D-IC 与先进封装堆叠散热，以及微流道、均热板、液冷等散热方案的验证与优化。", en: "Evaluate chip junction temperature and package thermal resistance, power device thermal design, and 3D-IC and advanced package stack cooling; validate and optimize microchannel, vapor chamber, and liquid cooling schemes." },
-"sem.cap5": { zh: "结构与可靠性", en: "Structural Analysis & Reliability" },
-"sem.cap5.d": { zh: "封装结构与界面应力、翘曲变形分析，焊点黏塑性蠕变与电迁移失效，热循环疲劳及高加速应力试验（HAST）等可靠性评估。", en: "Analyze package structure and interface stresses, warpage, solder joint viscoplastic creep and electromigration failure, thermal cycling fatigue, and reliability under Highly Accelerated Stress Testing (HAST)." },
-"sem.app1": { zh: "先进封装热-力可靠性", en: "Advanced Packaging Thermal-Mechanical Reliability" },
-"sem.app1.d": { zh: "TSV/微凸点、混合键合与回流焊工艺的应力、翘曲与热管理。", en: "Stress, warpage, and thermal management of TSVs, micro-bumps, hybrid bonding, and reflow processes." },
-"sem.app2": { zh: "芯片与功率模块散热", en: "Chip & Power Module Cooling" },
-"sem.app2.d": { zh: "高算力芯片与 IGBT 功率模块的结温与冷却设计。", en: "Junction temperature and cooling design of high-performance chips and IGBT power modules." },
-"sem.app3": { zh: "等离子体工艺仿真", en: "Plasma Process Simulation" },
-"sem.app3.d": { zh: "ICP/CCP 刻蚀与沉积速率、均匀性及等离子体化学。", en: "ICP/CCP etch and deposition rate, uniformity, and plasma chemistry." },
-"sem.app4": { zh: "器件与光电子仿真", en: "Device & Optoelectronics Simulation" },
-"sem.app4.d": { zh: "双极晶体管、MOSFET、IGBT 及 LED、激光二极管的器件级建模。", en: "Device-level modeling of BJTs, MOSFETs, IGBTs, LEDs, and laser diodes." },
-"sem.app5": { zh: "可靠性评估", en: "Reliability Assessment" },
-"sem.app5.d": { zh: "焊点蠕变/电迁移、热循环疲劳与 HAST 高加速应力试验。", en: "Solder creep/electromigration, thermal cycling fatigue, and HAST." },
 "energy.banner.title": { zh: "能源与电池解决方案", en: "Energy & Battery Solutions" },
 "energy.banner.desc": { zh: "覆盖电池、燃料电池、光伏与储能系统的电化学、热、结构多物理场仿真", en: "Electrochemical, thermal, and structural multiphysics simulation for batteries, fuel cells, PV, and energy storage" },
 "energy.ov.title": { zh: "从电化学机理到系统热管理", en: "From Electrochemistry to System Thermal Management" },
@@ -313,9 +596,9 @@
 "auto.app5": { zh: "制动热衰退", en: "Brake Thermal Fade" },
 "auto.app5.d": { zh: "连续制动工况下制动系统温度与性能预测。", en: "Predict brake system temperature and performance under repeated braking." },
 "elec.banner.title": { zh: "电子与半导体解决方案", en: "Electronics & Semiconductor Solutions" },
-"elec.banner.desc": { zh: "芯片散热、先进封装、PCB 电磁兼容与制造/封装工艺仿真", en: "Chip cooling, advanced packaging, PCB EMC, and manufacturing/packaging process simulation" },
-"elec.ov.title": { zh: "覆盖器件-封装-系统层级的多物理场能力", en: "Multiphysics Across Device, Package, and System Levels" },
-"elec.ov.desc": { zh: "电子与半导体产品的可靠性与性能取决于电、热、力、湿等多物理场的相互作用。我们依托 COMSOL Multiphysics 提供从芯片级、封装级到系统级的一体化仿真能力，覆盖器件设计、先进封装、热管理与电磁兼容等关键环节。面向半导体行业的全流程解决方案，请见半导体解决方案专页。", en: "The reliability and performance of electronics and semiconductor products depend on the interplay of electrical, thermal, mechanical, and moisture fields. Built on COMSOL Multiphysics, we deliver integrated chip-, package-, and system-level simulation covering device design, advanced packaging, thermal management, and EMC. For full semiconductor-process solutions, see our dedicated semiconductor page." },
+"elec.banner.desc": { zh: "从晶圆制造与前道制程、器件设计、先进封装到系统级可靠性的全流程多物理场仿真", en: "End-to-end multiphysics simulation from wafer fabrication and front-end processes to device design, advanced packaging, and system-level reliability" },
+"elec.ov.title": { zh: "从晶圆制造到系统级可靠性的全流程仿真能力", en: "Full-Process Simulation from Wafer Fabrication to System-Level Reliability" },
+"elec.ov.desc": { zh: "半导体产业正从平面器件走向 3D 集成与先进封装，制造与封装工艺涉及电、热、力、湿及等离子体等多种物理过程的强耦合。依托 COMSOL Multiphysics 统一建模环境，我们提供从晶圆制造与前道制程、半导体器件设计、先进封装与封测、散热热管理到结构可靠性的完整链路仿真，覆盖 PCB 电磁兼容与功率器件电-热分析等电子应用，助力企业缩短研发周期、提升良率与产品可靠性。", en: "The semiconductor industry is evolving from planar devices to 3D integration and advanced packaging, where manufacturing and packaging processes strongly couple electrical, thermal, mechanical, moisture, and plasma phenomena. Built on the unified COMSOL Multiphysics environment, we deliver full-chain simulation from wafer fabrication and front-end processes, semiconductor device design, and advanced packaging and test, to thermal management and structural reliability — while covering PCB EMC and power device electro-thermal analysis — helping companies shorten R&D cycles, raise yield, and improve reliability." },
 "elec.cap.title": { zh: "核心仿真能力", en: "Core Simulation Capabilities" },
 "elec.app.title": { zh: "典型应用场景", en: "Typical Application Scenarios" },
 "elec.cap1": { zh: "芯片与功率器件热设计", en: "Chip & Power Device Thermal Design" },
@@ -328,14 +611,22 @@
 "elec.cap4.d": { zh: "等离子体刻蚀/沉积、CVD、离子注入与真空分子流、回流焊与塑封工艺仿真。", en: "Plasma etching/deposition, CVD, ion implantation and vacuum molecular flow, reflow soldering, and molding processes." },
 "elec.cap5": { zh: "可靠性评估", en: "Reliability Assessment" },
 "elec.cap5.d": { zh: "焊点蠕变与电迁移、热循环疲劳、高温高湿（HAST）环境可靠性。", en: "Solder joint creep and electromigration, thermal cycling fatigue, and HAST reliability." },
-"elec.app1": { zh: "高算力芯片散热", en: "High-Performance Chip Cooling" },
-"elec.app1.d": { zh: "AI/GPU 芯片结温与先进封装热管理。", en: "Junction temperature and advanced package thermal management for AI/GPU chips." },
-"elec.app2": { zh: "先进封装翘曲与应力", en: "Advanced Packaging Warpage & Stress" },
-"elec.app2.d": { zh: "2.5D/3D 封装回流焊与塑封工艺应力、翘曲与界面失效预测。", en: "Reflow and molding stress, warpage, and interface failure prediction for 2.5D/3D packages." },
-"elec.app3": { zh: "PCB 电磁兼容", en: "PCB EMC" },
-"elec.app3.d": { zh: "高速电路辐射与抗扰度、电源完整性分析。", en: "Radiation, immunity, and power integrity of high-speed circuits." },
-"elec.app4": { zh: "IGBT/功率模块", en: "IGBT / Power Modules" },
-"elec.app4.d": { zh: "功率器件电-热-结构耦合与可靠性设计。", en: "Electro-thermal-structural coupling and reliability design of power devices." },
+"elec.app1": { zh: "晶圆制造与前道制程", en: "Wafer Fabrication & Front-End Processes" },
+"elec.app1.d": { zh: "等离子体刻蚀与沉积（ICP/CCP）、CVD 与外延、离子注入与真空分子流、CMP 平坦化的工艺设备与过程仿真。", en: "Plasma etching and deposition (ICP/CCP), CVD and epitaxy, ion implantation and vacuum molecular flow, and CMP planarization for process equipment and process simulation." },
+"elec.app2": { zh: "半导体器件设计", en: "Semiconductor Device Design" },
+"elec.app2.d": { zh: "漂移-扩散与泊松方程耦合求解，模拟 MOSFET、IGBT、双极晶体管、肖特基二极管、太阳能电池、LED 与激光二极管等光电子器件。", en: "Coupled drift-diffusion and Poisson equations for MOSFETs, IGBTs, BJTs, Schottky diodes, solar cells, and optoelectronic devices such as LEDs and laser diodes." },
+"elec.app3": { zh: "先进封装与 3D-IC", en: "Advanced Packaging & 3D-IC" },
+"elec.app3.d": { zh: "TSV/微凸点、混合键合与回流焊工艺的应力、翘曲与堆叠散热，2.5D/3D 封装翘曲与界面失效预测。", en: "Stress, warpage, and stacking cooling of TSVs, micro-bumps, hybrid bonding, and reflow; warpage and interface failure prediction for 2.5D/3D packages." },
+"elec.app4": { zh: "芯片与功率模块散热", en: "Chip & Power Module Cooling" },
+"elec.app4.d": { zh: "AI/GPU 高算力芯片结温、IGBT 与功率器件电-热-结构耦合与热设计。", en: "Junction temperature of AI/GPU chips, and electro-thermal-structural coupling and thermal design of IGBT and power modules." },
+"elec.app5": { zh: "PCB 电磁兼容", en: "PCB EMC" },
+"elec.app5.d": { zh: "高速互连信号与电源完整性、辐射发射、抗扰度与电磁兼容分析。", en: "Signal and power integrity of high-speed interconnects, radiation, immunity, and EMC analysis." },
+"elec.app6": { zh: "等离子体工艺仿真", en: "Plasma Process Simulation" },
+"elec.app6.d": { zh: "ICP/CCP 刻蚀与沉积速率、均匀性及等离子体化学。", en: "ICP/CCP etch and deposition rate, uniformity, and plasma chemistry." },
+"elec.app7": { zh: "可靠性评估", en: "Reliability Assessment" },
+"elec.app7.d": { zh: "焊点蠕变与电迁移、热循环疲劳、高温高湿（HAST）高加速应力试验。", en: "Solder joint creep and electromigration, thermal cycling fatigue, and HAST reliability." },
+"elec.app8": { zh: "器件与光电子仿真", en: "Device & Optoelectronics Simulation" },
+"elec.app8.d": { zh: "双极晶体管、MOSFET、IGBT 及 LED、激光二极管的器件级建模与耦合分析。", en: "Device-level modeling and coupling analysis of BJTs, MOSFETs, IGBTs, LEDs, and laser diodes." },
 "aero.banner.title": { zh: "航空航天解决方案", en: "Aerospace Solutions" },
 "aero.banner.desc": { zh: "气动弹性、热防护、气动噪声与复合材料结构的多物理场仿真", en: "Multiphysics simulation for aeroelasticity, thermal protection, aeroacoustics, and composite structures" },
 "aero.ov.title": { zh: "面向严苛环境的航空级仿真能力", en: "Simulation for Extreme Aerospace Environments" },
