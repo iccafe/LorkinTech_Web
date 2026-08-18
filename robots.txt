@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://iccafe.github.io/LorkinTech_Web/sitemap.xml

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://iccafe.github.io/LorkinTech_Web/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://iccafe.github.io/LorkinTech_Web/products.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://iccafe.github.io/LorkinTech_Web/solutions.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://iccafe.github.io/LorkinTech_Web/contact.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://iccafe.github.io/LorkinTech_Web/products/em.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://iccafe.github.io/LorkinTech_Web/products/fluid.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://iccafe.github.io/LorkinTech_Web/products/struct.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://iccafe.github.io/LorkinTech_Web/products/chem.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://iccafe.github.io/LorkinTech_Web/products/multi.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://iccafe.github.io/LorkinTech_Web/products/interface.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://iccafe.github.io/LorkinTech_Web/products/platform.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://iccafe.github.io/LorkinTech_Web/solutions/solution-energy.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://iccafe.github.io/LorkinTech_Web/solutions/solution-auto.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://iccafe.github.io/LorkinTech_Web/solutions/solution-elec.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://iccafe.github.io/LorkinTech_Web/solutions/solution-aero.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://iccafe.github.io/LorkinTech_Web/solutions/solution-bio.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://iccafe.github.io/LorkinTech_Web/solutions/solution-process.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+</urlset>
