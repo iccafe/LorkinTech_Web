@@ -104,5 +104,6 @@ server {
 
 - **HTTP 没有强制跳到 HTTPS**：建站宝盒面板的「301跳转」只把裸域跳到 www，不升级协议，
   所以 `http://www.lorkintech.com` 仍返回 200。要彻底强制，需要服务商在 nginx 上加
-  `return 301 https://$host$request_uri;`，属于主机侧配置（FTP 做不到），可开工单请 iisp 加。
+  `return 301 https://$host$request_uri;`，属于主机侧配置（FTP 做不到）。
+  **2026-10-13 决定：不向 iisp 提工单，保持现状**（HTTPS 本身已可用，SEO 与分享链接都走 https）。
 - **`https://lorkintech.com`（裸域）不跳 www**：HTTPS 下两个域名都能打开，SEO 靠 canonical 收敛到 www。
