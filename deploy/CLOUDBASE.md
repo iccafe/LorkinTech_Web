@@ -50,7 +50,7 @@ tcb login                        # 浏览器授权一次即可，长期有效
 
 - [x] lorkintech.com 通过腾讯云办理 ICP 备案 → 已下号：沪ICP备2026047698号-1
 - [ ] 备案通过后在静态托管绑定自定义域名 + 配置证书
-- [x] 全站 SEO URL（canonical/sitemap/robots）已从 github.io 切到 `http://lorkintech.com`
+- [x] 全站 SEO URL（canonical/sitemap/robots）已从 github.io 切到 `https://www.lorkintech.com`
 - [x] GitHub Pages（iccafe.github.io/LorkinTech_Web/）保留为备用入口（已同步最新版）
 
 > 注：lorkintech.com 目前解析到自有服务器（通过 FTP 部署），并未走 CloudBase 静态托管；

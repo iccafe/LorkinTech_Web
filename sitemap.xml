@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>http://lorkintech.com/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>http://lorkintech.com/products.html</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>http://lorkintech.com/solutions.html</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>http://lorkintech.com/contact.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>http://lorkintech.com/products/em.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>http://lorkintech.com/products/fluid.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>http://lorkintech.com/products/struct.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>http://lorkintech.com/products/chem.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>http://lorkintech.com/products/multi.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>http://lorkintech.com/products/interface.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>http://lorkintech.com/products/platform.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>http://lorkintech.com/solutions/solution-energy.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>http://lorkintech.com/solutions/solution-auto.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>http://lorkintech.com/solutions/solution-elec.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>http://lorkintech.com/solutions/solution-aero.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>http://lorkintech.com/solutions/solution-bio.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>http://lorkintech.com/solutions/solution-process.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.lorkintech.com/</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.lorkintech.com/products.html</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.lorkintech.com/solutions.html</loc><lastmod>2026-10-13</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.lorkintech.com/contact.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.lorkintech.com/products/em.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.lorkintech.com/products/fluid.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.lorkintech.com/products/struct.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.lorkintech.com/products/chem.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.lorkintech.com/products/multi.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.lorkintech.com/products/interface.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.lorkintech.com/products/platform.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.lorkintech.com/solutions/solution-energy.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.lorkintech.com/solutions/solution-auto.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.lorkintech.com/solutions/solution-elec.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.lorkintech.com/solutions/solution-aero.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.lorkintech.com/solutions/solution-bio.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.lorkintech.com/solutions/solution-process.html</loc><lastmod>2026-10-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

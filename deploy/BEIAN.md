@@ -49,7 +49,7 @@
 5. **上海管局终审**：法定 ≤20 个工作日，实际通常 1~2 周
 6. **下号后三件事**：
    - [x] 页脚挂备案号（链接 beian.miit.gov.cn）→ 已上线：沪ICP备2026047698号-1，全站 17 页
-   - [ ] CloudBase 静态托管绑定 lorkintech.com + HTTPS 证书
+   - [x] HTTPS 证书已部署到实际主机（CVM + 建站宝盒面板），见 `HTTPS.md`；CloudBase 未启用
    - [ ] 30 日内公安联网备案（beian.mps.gov.cn）
 
 ## 时间线
@@ -62,7 +62,7 @@
 
 ## 下号后的 SEO 切换清单（届时由开发者执行）
 
-- [x] `scripts/seo-inject.cjs` 的 BASE 改为正式域名 → 已改为 `http://lorkintech.com`（服务器目前仅 HTTP，HTTPS 配置见 `HTTPS.md`）
+- [x] `scripts/seo-inject.cjs` 的 BASE 改为正式域名 → 已改为 `https://www.lorkintech.com`（HTTPS 已于 2026-10-13 上线，见 `HTTPS.md`）
 - [x] 更新 `sitemap.xml` 与 `robots.txt` 中的域名（sitemap 另补了 `<lastmod>`）
-- [x] 旧 github.io 地址 → 已同步最新版（canonical 指向 lorkintech.com），保留为备用镜像
+- [x] 旧 github.io 地址 → 已同步最新版（canonical 指向 https://www.lorkintech.com），保留为备用镜像
 - [ ] Search Console / Bing 站长平台提交新 sitemap

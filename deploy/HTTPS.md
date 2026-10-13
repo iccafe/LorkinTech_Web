@@ -1,8 +1,27 @@
 # 官网 HTTPS 配置指南（lorkintech.com）
 
-> 现状（2026-10-13 核对）：域名只监听 80 端口（HTTP），443 未开放。
-> 因此全站 SEO 地址暂用 `http://lorkintech.com`。
-> 证书配好后，把 `scripts/seo-inject.cjs` 的 `BASE` 改成 `https://lorkintech.com` 重跑即可。
+> **已完成（2026-10-13）**：`https://www.lorkintech.com` 已上线，证书 CN=lorkintech.com
+> （TrustAsia DV，含 www，有效期 2026-10-13 ~ 2027-04-29）。
+> 全站 SEO 地址已切到 `https://www.lorkintech.com`。
+> 唯一遗留：`http://` 仍可访问（面板的 301 只做域名跳转，不做 scheme 升级），见文末「已知遗留」。
+
+## 实际采用的方案（与下方通用步骤不同，以本节为准）
+
+| 环节 | 实际做法 |
+|---|---|
+| 证书来源 | 腾讯云 SSL 证书控制台（账号 100052473587）→ 免费 DV，**文件验证** |
+| 域名验证 | 把 `fileauth.txt` 放到网站根目录 `/.well-known/pki-validation/`（走 FTP，无需动 DNS） |
+| 证书下载 | 控制台下载 **Nginx** 格式：`*_bundle.crt` + `*.key` |
+| 证书部署 | 建站宝盒面板 `http://1.15.104.203/wdsadmin/managePage.php` → SSL 证书 → 上传证书 |
+| 强制跳转 | 面板「301跳转」开启 → `http://lorkintech.com` 301 到 `http://www.lorkintech.com` |
+
+### 下次续期怎么做（90 天 / 到期前 30 天）
+
+1. 腾讯云 SSL 控制台 → 我的证书 → 该证书「快速续期」→ 选 **文件验证**
+2. 把新的 `fileauth.txt` 用 FTP 放到 `/www/.well-known/pki-validation/`
+3. 回控制台点验证 → 等签发（约几分钟）
+4. 下载 Nginx 格式证书 → 建站宝盒面板「上传证书」重新上传（会覆盖旧证书），301 保持开启
+5. 确认 `curl -I https://www.lorkintech.com` 返回 200，且证书 `notAfter` 已更新
 
 ## 为什么值得做
 
@@ -75,8 +94,15 @@ server {
 
 ## 检查清单
 
-- [ ] 证书签发
-- [ ] nginx 加载证书，443 可访问
-- [ ] HTTP 301 跳转到 HTTPS
-- [ ] 站内 SEO 地址全部切到 https
+- [x] 证书签发（TrustAsia DV，2026-10-13 签发）
+- [x] nginx 加载证书，443 可访问（`https://lorkintech.com` 与 `https://www.lorkintech.com` 均 200）
+- [x] 域名 301 跳转（`http://lorkintech.com` → `http://www.lorkintech.com`，**注意仍是 http**）
+- [x] 站内 SEO 地址全部切到 `https://www.lorkintech.com`
 - [ ] 站长平台重新提交 sitemap
+
+## 已知遗留
+
+- **HTTP 没有强制跳到 HTTPS**：建站宝盒面板的「301跳转」只把裸域跳到 www，不升级协议，
+  所以 `http://www.lorkintech.com` 仍返回 200。要彻底强制，需要服务商在 nginx 上加
+  `return 301 https://$host$request_uri;`，属于主机侧配置（FTP 做不到），可开工单请 iisp 加。
+- **`https://lorkintech.com`（裸域）不跳 www**：HTTPS 下两个域名都能打开，SEO 靠 canonical 收敛到 www。
