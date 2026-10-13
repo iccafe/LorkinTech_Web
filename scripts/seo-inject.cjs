@@ -8,6 +8,9 @@ const ADDR_ZH = "上海市浦东新区国展路1529号 申能金融大厦 五楼
 const ADDR_EN = "Room 520, 5F, Shenneng Financial Tower, No. 1529 Guozhan Road, Pudong New Area, Shanghai, China";
 const EMAIL = "sales@lorkintech.com";
 
+const CANON_ANCHOR = '<link rel="canonical" href="';
+const SHEET_ANCHOR = '<link rel="stylesheet" href=';
+
 const orgLD = {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -63,9 +66,17 @@ const pages = [];
 for (const f of pages) {
   let t = fs.readFileSync(f, "utf8");
 
-  // Remove previously injected block (SIT fallback: drop anything between <head> and <meta charset>)
-  if (t.includes('rel="canonical"')) {
-    t = t.replace(/<head>\n[\s\S]*?(\s*<meta charset="UTF-8">)/, "<head>\n$1");
+  // Drop anything between <head> and <meta charset> (legacy builder fallback)
+  t = t.replace(/<head>\n[\s\S]*?(\s*<meta charset="UTF-8">)/, "<head>\n$1");
+
+  // Remove a previously injected SEO block, so repeated runs stay idempotent
+  const canonAt = t.indexOf(CANON_ANCHOR);
+  const sheetAt = t.indexOf(SHEET_ANCHOR);
+  if (canonAt !== -1 && sheetAt !== -1 && canonAt < sheetAt) {
+    let start = canonAt;
+    while (start > 0 && (t[start - 1] === " " || t[start - 1] === "\t")) start--;
+    if (start > 0 && t[start - 1] === "\n") start--;
+    t = t.slice(0, start) + t.slice(sheetAt);
   }
 
   const relPath = path.relative(root, f).split(path.sep).join("/"); // e.g. index.html, products/em.html
@@ -137,8 +148,7 @@ for (const f of pages) {
     ldHtml + "\n";
 
   // Insert after the charset/viewport/title/description block, before stylesheet link
-  const sheetAnchor = "<link rel=\"stylesheet\" href=";
-  const idx = t.indexOf(sheetAnchor);
+  const idx = t.indexOf(SHEET_ANCHOR);
   t = t.slice(0, idx) + block + "\n" + t.slice(idx);
   fs.writeFileSync(f, t);
   console.log("injected:", relPath);
