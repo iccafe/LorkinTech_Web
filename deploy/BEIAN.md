@@ -48,7 +48,7 @@
    beian.miit.gov.cn 完成验证
 5. **上海管局终审**：法定 ≤20 个工作日，实际通常 1~2 周
 6. **下号后三件事**：
-   - [ ] 页脚挂备案号（链接 beian.miit.gov.cn）→ 改 footer 后重新发布
+   - [x] 页脚挂备案号（链接 beian.miit.gov.cn）→ 已上线：沪ICP备2026047698号-1，全站 17 页
    - [ ] CloudBase 静态托管绑定 lorkintech.com + HTTPS 证书
    - [ ] 30 日内公安联网备案（beian.mps.gov.cn）
 
@@ -62,7 +62,7 @@
 
 ## 下号后的 SEO 切换清单（届时由开发者执行）
 
-- [ ] `scripts/seo-inject.cjs` 的 BASE 改为正式域名并重跑全站注入
-- [ ] 更新 `sitemap.xml` 与 `robots.txt` 中的域名
+- [x] `scripts/seo-inject.cjs` 的 BASE 改为正式域名 → 已改为 `http://lorkintech.com`（注：服务器目前仅 HTTP，尚未配置 HTTPS）
+- [x] 更新 `sitemap.xml` 与 `robots.txt` 中的域名
 - [ ] Search Console / Bing 站长平台提交新 sitemap
 - [ ] 旧 github.io 地址设置跳转或保留备用

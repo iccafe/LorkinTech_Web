@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const root = process.cwd();
-const BASE = "https://iccafe.github.io/LorkinTech_Web";
+const BASE = "http://lorkintech.com";
 const LOGO = BASE + "/logo/LorkinTech_logo_web.png";
 const ADDR_ZH = "上海市浦东新区国展路1529号 申能金融大厦 五楼 520室";
 const ADDR_EN = "Room 520, 5F, Shenneng Financial Tower, No. 1529 Guozhan Road, Pudong New Area, Shanghai, China";
